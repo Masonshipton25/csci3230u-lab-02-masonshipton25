@@ -77,6 +77,37 @@ body {
 /* ---- the numbers palette  (requirement 6) -------------------------- */
 /* TODO: size + border the .palette cells; a :hover colour; and a
    .active style for the selected digit (used in Lab 06). */
+#palette {
+   --cell-size: min(8vw, 40px);
+   border-collapse: collapse;
+   border: 3px solid var(--block-line);  
+   margin-top: 1rem;
+}
+
+#palette td {
+   width: var(--cell-size);
+   height: var(--cell-size);
+   text-align: center;
+   vertical-align: middle;
+   font-size: calc(var(--cell-size) * 0.6);
+   color: var(--digit);
+   border: 1px solid var(--block-line);
+}
+
+#palette td:hover {
+   background-color: var(--color-hover);
+}
+
+#palette td.active {
+   background-color: var(--block-line);
+   color: white;
+}
+
+#palette img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 
 /* ---- high-scores table  (requirement 8) ---------------------------- */
