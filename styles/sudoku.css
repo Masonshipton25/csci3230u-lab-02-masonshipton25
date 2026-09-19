@@ -72,6 +72,7 @@ body {
    --cell-size: min(8.5vw, 50px);
    border-collapse: collapse;
    border: 3px solid var(--block-line);
+   margin-inline: auto;
 }
 
 #board td {
@@ -113,6 +114,7 @@ body {
    border-collapse: collapse;
    border: 3px solid var(--block-line);  
    margin-top: 1rem;
+   margin-inline: auto;
 }
 
 #palette td {
